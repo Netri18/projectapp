@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 120 10% 95%;
+    --foreground: 150 10% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 150 10% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 150 10% 15%;
+
+    --primary: 142 44% 35%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 120 10% 92%;
+    --secondary-foreground: 150 10% 15%;
+
+    --muted: 120 8% 90%;
+    --muted-foreground: 150 5% 45%;
+
+    --accent: 142 44% 92%;
+    --accent-foreground: 142 44% 25%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 120 8% 88%;
+    --input: 120 8% 88%;
+    --ring: 142 44% 35%;
+
+    --radius: 1rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    --success: 142 60% 45%;
+    --success-foreground: 0 0% 100%;
+  }
+
+  .dark {
+    --background: 150 10% 8%;
+    --foreground: 120 10% 92%;
+    --card: 150 10% 12%;
+    --card-foreground: 120 10% 92%;
+    --popover: 150 10% 12%;
+    --popover-foreground: 120 10% 92%;
+    --primary: 142 44% 45%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 150 10% 18%;
+    --secondary-foreground: 120 10% 92%;
+    --muted: 150 10% 18%;
+    --muted-foreground: 120 5% 55%;
+    --accent: 142 44% 18%;
+    --accent-foreground: 142 44% 75%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 150 10% 20%;
+    --input: 150 10% 20%;
+    --ring: 142 44% 45%;
+    --success: 142 60% 45%;
+    --success-foreground: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
